@@ -23,7 +23,7 @@ appending to a free format configuration file.
 %description -l pl
 Za pomoc± boxes mo¿na rysowaæ ró¿ne ramki wokó³ podanego tekstu,
 pocz±wszy od komentarzy C a skoñczywszy na skomplikowanym ascii art.
-Mo¿na równie¿ usuwaæ te ramki, nawet jesli zosta³y powa¿nie uszkodzone
+Mo¿na równie¿ usuwaæ te ramki, nawet je¶li zosta³y powa¿nie uszkodzone
 edycj± znajduj±cego siê w nich tekstu. Poniewa¿ mog± byæ otwarte z
 ka¿dej strony, mo¿na ich u¿yæ do tworzenia lokalnych komentarzy w
 jakimkolwiek jêzyku programowania. Za pomoc± edytora makr lub
