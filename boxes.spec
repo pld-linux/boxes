@@ -1,18 +1,13 @@
-name:		%name
-version:	%version
-release:	%release
-
 Summary:	Draw any kind of box around some given text
 Name:		boxes
 Version:	1.0
 Release:	1
 License:	GPL Version 2
 Group:		Utilities/Text
-Group(fr):	Utilitaires/Texte
 Group(pl):	Narzêdzia/Tekst
+Group(fr):	Utilitaires/Texte
 Vendor:		Thomas Jensen <boxes@home-of.tj>
 URL:		http://home.pages.de/~jensen/boxes/
-
 Source0:	http://home.pages.de/~jensen/boxes/download/%{name}-%{version}-src.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -38,19 +33,12 @@ dodaæ nowe rodzaje ramek ró¿nego rodzaju, do³±czaj±c je do pliku
 konfiguracyjnego o otwartym formacie.
 
 
-###########################################################################
-# useful macros
-###########################################################################
-%define cleanroot [ -n "$RPM_BUILD_ROOT" -a "$RPM_BUILD_ROOT" = "%defbuildroot" ] && rm -rf "$RPM_BUILD_ROOT"
-%define restorebins [ -f $RPM_BUILD_DIR/$RPM_PACKAGE_NAME.cpio ] && cpio -iv -I $RPM_BUILD_DIR/$RPM_PACKAGE_NAME.cpio
-###########################################################################
-
 %prep
 %setup -q
 
 %build
-rm doc/boxes.1
-rm src/boxes.h
+rm -f doc/boxes.1
+rm -f src/boxes.h
 %{__make} GLOBALCONF=%cfgfile
 
 %install
@@ -70,6 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/boxes
-%{_prefix}/man/man1/boxes.1
+%{_mandir}/man1/boxes.1
 %config %{_datadir}/boxes
 %doc COPYING README
