@@ -6,9 +6,8 @@ Release:	1
 License:	GPL
 Group:		Applications/Text
 Vendor:		Thomas Jensen <boxes@home-of.tj>
-# current versions: s/-src/.src/
-Source0:	http://boxes.thomasjensen.com/download/%{name}-%{version}-src.tar.gz
-# Source0-md5:	6f699338a07d043ac2532046b81941be
+Source0:	http://boxes.thomasjensen.com/download/%{name}-%{version}.src.tar.gz
+# Source0-md5:	fce851c773342ea80cb746ca917448e5
 URL:		http://boxes.thomasjensen.com/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
