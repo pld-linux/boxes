@@ -1,4 +1,5 @@
 Summary:	Draw any kind of box around some given text
+Summary(pl):	Rysuj dowolne ramki wokól podanego tekstu
 Name:		boxes
 Version:	1.0
 Release:	1
