@@ -5,18 +5,6 @@ Version:	1.0
 Release:	1
 License:	GPL
 Group:		Applications/Text
-Group(cs):	Aplikace/Text
-Group(da):	Programmer/Tekst
-Group(de):	Applikationen/Text
-Group(es):	Aplicaciones/Texto
-Group(fr):	Applications/Texte
-Group(it):	Applicazioni/Testo
-Group(ja):	•¢•◊•Í•±°º•∑•Á•Û/•∆•≠•π•»
-Group(no):	Applikasjoner/Tekst
-Group(pl):	Aplikacje/Tekst
-Group(pt):	AplicaÁıes/Texto
-Group(ru):	“…Ãœ÷≈Œ…—/Ú¡¬œ‘¡ ” ‘≈À”‘¡Õ…
-Group(sv):	Till‰mpningar/Text
 Vendor:		Thomas Jensen <boxes@home-of.tj>
 Source0:	http://home.pages.de/~jensen/boxes/download/%{name}-%{version}-src.tar.gz
 URL:		http://home.pages.de/~jensen/boxes/
