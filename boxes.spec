@@ -1,13 +1,14 @@
 Summary:	Draw any kind of box around some given text
-Summary(pl):	Rysuj dowolne ramki wokó³ podanego tekstu
+Summary(pl):	Rysowanie dowolnych ramek wokó³ podanego tekstu
 Name:		boxes
 Version:	1.0
 Release:	1
 License:	GPL
 Group:		Applications/Text
 Vendor:		Thomas Jensen <boxes@home-of.tj>
-Source0:	http://home.pages.de/~jensen/boxes/download/%{name}-%{version}-src.tar.gz
-URL:		http://home.pages.de/~jensen/boxes/
+# current versions: s/-src/.src/
+Source0:	http://boxes.thomasjensen.com/download/%{name}-%{version}-src.tar.gz
+URL:		http://boxes.thomasjensen.com/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
