@@ -21,7 +21,7 @@ copyright:	GPL Version 2
 URL:		http://home.pages.de/~jensen/boxes/
 
 source:		http://home.pages.de/~jensen/boxes/download/%{name}-%{version}-src.tar.gz
-buildroot:	%defbr
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 "boxes" can draw all kinds of boxes around its input text, ranging from a C
