@@ -5,9 +5,18 @@ Version:	1.0
 Release:	1
 License:	GPL
 Group:		Applications/Text
+Group(cs):	Aplikace/Text
+Group(da):	Programmer/Tekst
 Group(de):	Applikationen/Text
-Group(fr):	Utilitaires/Texte
+Group(es):	Aplicaciones/Texto
+Group(fr):	Applications/Texte
+Group(it):	Applicazioni/Testo
+Group(ja):	•¢•◊•Í•±°º•∑•Á•Û/•∆•≠•π•»
+Group(no):	Applikasjoner/Tekst
 Group(pl):	Aplikacje/Tekst
+Group(pt):	AplicaÁıes/Texto
+Group(ru):	“…Ãœ÷≈Œ…—/Ú¡¬œ‘¡ ” ‘≈À”‘¡Õ…
+Group(sv):	Till‰mpningar/Text
 Vendor:		Thomas Jensen <boxes@home-of.tj>
 Source0:	http://home.pages.de/~jensen/boxes/download/%{name}-%{version}-src.tar.gz
 URL:		http://home.pages.de/~jensen/boxes/
@@ -40,25 +49,24 @@ konfiguracyjnego o otwartym formacie.
 %build
 rm -f doc/boxes.1
 rm -f src/boxes.h
-%{__make} GLOBALCONF=%cfgfile
+%{__make} GLOBALCONF="%{_sysconfdir}/boxes.conf"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_datadir}}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_sysconfdir}}
 
 install src/boxes $RPM_BUILD_ROOT%{_bindir}
 install doc/boxes.1 $RPM_BUILD_ROOT%{_mandir}/man1
-install boxes-config $RPM_BUILD_ROOT/%cfgfile
+install boxes-config $RPM_BUILD_ROOT%{_sysconfdir}/boxes.conf
 
-# write filelisting to /tmp
-find "$RPM_BUILD_ROOT" -type f -printf "/%P\n" > /tmp/FILES-%nvr
+gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc README.gz
 %attr(755,root,root) %{_bindir}/boxes
 %{_mandir}/man1/boxes.1
-%config %{_datadir}/boxes
-%doc COPYING README
+%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/boxes.conf
