@@ -51,7 +51,7 @@ konfiguracyjnego o otwartym formacie.
 %build
 rm doc/boxes.1
 rm src/boxes.h
-make GLOBALCONF=%cfgfile
+%{__make} GLOBALCONF=%cfgfile
 
 %install
 rm -rf $RPM_BUILD_ROOT
