@@ -1,13 +1,14 @@
 Summary:	Draw any kind of box around some given text
 Summary(pl):	Rysowanie dowolnych ramek wokó³ podanego tekstu
 Name:		boxes
-Version:	1.0
+Version:	1.0.1
 Release:	1
 License:	GPL
 Group:		Applications/Text
 Vendor:		Thomas Jensen <boxes@home-of.tj>
 Source0:	http://boxes.thomasjensen.com/download/%{name}-%{version}.src.tar.gz
-# Source0-md5:	fce851c773342ea80cb746ca917448e5
+# Source0-md5:	77935fb3b566755db798d678f945bd4d
+Patch0:		%{name}-cflags.patch
 URL:		http://boxes.thomasjensen.com/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -34,11 +35,12 @@ konfiguracyjnego o otwartym formacie.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 rm -f doc/boxes.1
 rm -f src/boxes.h
-%{__make} GLOBALCONF="%{_sysconfdir}/boxes.conf"
+%{__make} CFLAGS_ADDTL="%{rpmcflags}" GLOBALCONF="%{_sysconfdir}/boxes.conf"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -54,6 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%attr(755,root,root) %{_bindir}/boxes
-%{_mandir}/man1/boxes.1
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/boxes.conf
+%attr(755,root,root) %{_bindir}/*
+%{_mandir}/man1/*
+%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/*
