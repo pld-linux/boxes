@@ -1,15 +1,16 @@
 Summary:	Draw any kind of box around some given text
-Summary(pl):	Rysuj dowolne ramki wokól podanego tekstu
+Summary(pl):	Rysuj dowolne ramki wokó³ podanego tekstu
 Name:		boxes
 Version:	1.0
 Release:	1
-License:	GPL Version 2
-Group:		Utilities/Text
-Group(pl):	Narzêdzia/Tekst
+License:	GPL
+Group:		Applications/Text
+Group(de):	Applikationen/Text
 Group(fr):	Utilitaires/Texte
+Group(pl):	Aplikacje/Tekst
 Vendor:		Thomas Jensen <boxes@home-of.tj>
-URL:		http://home.pages.de/~jensen/boxes/
 Source0:	http://home.pages.de/~jensen/boxes/download/%{name}-%{version}-src.tar.gz
+URL:		http://home.pages.de/~jensen/boxes/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,7 +33,6 @@ jakimkolwiek jêzyku programowania. Za pomoc± edytora makr lub
 mapowania mo¿na ³atwo naprawiæ uszkodzone ramki. Mo¿na równie¿ ³atwo
 dodaæ nowe rodzaje ramek ró¿nego rodzaju, do³±czaj±c je do pliku
 konfiguracyjnego o otwartym formacie.
-
 
 %prep
 %setup -q
