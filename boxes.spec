@@ -32,6 +32,16 @@ any programming language. With the help of an editor macro or mapping,
 damaged boxes can easily be repaired. New box designs of all sorts can
 easily be added and shared by appending to a free format configuration file.
 
+%description -l pl
+Za pomoc± boxes mo¿na rysowaæ ró¿ne ramki wokó³ podanego tekstu, pocz±wszy
+od komentarzy C a skoñczywszy na skomplikowanym ascii art. Mo¿na równie¿
+usuwaæ te ramki, nawet jesli zosta³y powa¿nie uszkodzone edycj± znajduj±cego
+siê w nich tekstu. Poniewa¿ mog± byæ otwarte z ka¿dej strony, mo¿na ich
+u¿yæ do tworzenia lokalnych komentarzy w jakimkolwiek jêzyku programowania.
+Za pomoc± edytora makr lub mapowania mo¿na ³atwo naprawiæ uszkodzone ramki. 
+Mo¿na równie¿ ³atwo dodaæ nowe rodzaje ramek ró¿nego rodzaju, do³±czaj±c je 
+do pliku konfiguracyjnego o otwartym formacie.
+
 ###########################################################################
 # useful macros
 ###########################################################################
