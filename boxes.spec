@@ -5,11 +5,12 @@ Version:	1.0.1
 Release:	1
 License:	GPL
 Group:		Applications/Text
-Vendor:		Thomas Jensen <boxes@home-of.tj>
 Source0:	http://boxes.thomasjensen.com/download/%{name}-%{version}.src.tar.gz
 # Source0-md5:	77935fb3b566755db798d678f945bd4d
 Patch0:		%{name}-cflags.patch
 URL:		http://boxes.thomasjensen.com/
+BuildRequires:	bison
+BuildRequires:	flex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -40,7 +41,9 @@ konfiguracyjnego o otwartym formacie.
 %build
 rm -f doc/boxes.1
 rm -f src/boxes.h
-%{__make} CFLAGS_ADDTL="%{rpmcflags}" GLOBALCONF="%{_sysconfdir}/boxes.conf"
+%{__make} \
+	CFLAGS_ADDTL="%{rpmcflags}" \
+	GLOBALCONF="%{_sysconfdir}/boxes.conf"
 
 %install
 rm -rf $RPM_BUILD_ROOT
