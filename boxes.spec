@@ -1,12 +1,12 @@
 Summary:	Draw any kind of box around some given text
 Summary(pl):	Rysowanie dowolnych ramek wokó³ podanego tekstu
 Name:		boxes
-Version:	1.0.1
+Version:	1.1
 Release:	1
 License:	GPL
 Group:		Applications/Text
 Source0:	http://boxes.thomasjensen.com/download/%{name}-%{version}.src.tar.gz
-# Source0-md5:	77935fb3b566755db798d678f945bd4d
+# Source0-md5:	d2ef9fa28a87bf32b3fe0c47ab82fa97
 Patch0:		%{name}-cflags.patch
 URL:		http://boxes.thomasjensen.com/
 BuildRequires:	bison
@@ -42,6 +42,7 @@ konfiguracyjnego o otwartym formacie.
 rm -f doc/boxes.1
 rm -f src/boxes.h
 %{__make} \
+	CC="%{__cc}" \
 	CFLAGS_ADDTL="%{rpmcflags}" \
 	GLOBALCONF="%{_sysconfdir}/boxes.conf"
 
