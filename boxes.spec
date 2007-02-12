@@ -1,5 +1,5 @@
 Summary:	Draw any kind of box around some given text
-Summary(pl):	Rysowanie dowolnych ramek wokó³ podanego tekstu
+Summary(pl.UTF-8):   Rysowanie dowolnych ramek wokÃ³Å‚ podanego tekstu
 Name:		boxes
 Version:	1.1
 Release:	1
@@ -23,15 +23,15 @@ of an editor macro or mapping, damaged boxes can easily be repaired.
 New box designs of all sorts can easily be added and shared by
 appending to a free format configuration file.
 
-%description -l pl
-Za pomoc± boxes mo¿na rysowaæ ró¿ne ramki wokó³ podanego tekstu,
-pocz±wszy od komentarzy C a skoñczywszy na skomplikowanym ascii art.
-Mo¿na równie¿ usuwaæ te ramki, nawet je¶li zosta³y powa¿nie uszkodzone
-edycj± znajduj±cego siê w nich tekstu. Poniewa¿ mog± byæ otwarte z
-ka¿dej strony, mo¿na ich u¿yæ do tworzenia lokalnych komentarzy w
-jakimkolwiek jêzyku programowania. Za pomoc± edytora makr lub
-mapowania mo¿na ³atwo naprawiæ uszkodzone ramki. Mo¿na równie¿ ³atwo
-dodaæ nowe rodzaje ramek ró¿nego rodzaju, do³±czaj±c je do pliku
+%description -l pl.UTF-8
+Za pomocÄ… boxes moÅ¼na rysowaÄ‡ rÃ³Å¼ne ramki wokÃ³Å‚ podanego tekstu,
+poczÄ…wszy od komentarzy C a skoÅ„czywszy na skomplikowanym ascii art.
+MoÅ¼na rÃ³wnieÅ¼ usuwaÄ‡ te ramki, nawet jeÅ›li zostaÅ‚y powaÅ¼nie uszkodzone
+edycjÄ… znajdujÄ…cego siÄ™ w nich tekstu. PoniewaÅ¼ mogÄ… byÄ‡ otwarte z
+kaÅ¼dej strony, moÅ¼na ich uÅ¼yÄ‡ do tworzenia lokalnych komentarzy w
+jakimkolwiek jÄ™zyku programowania. Za pomocÄ… edytora makr lub
+mapowania moÅ¼na Å‚atwo naprawiÄ‡ uszkodzone ramki. MoÅ¼na rÃ³wnieÅ¼ Å‚atwo
+dodaÄ‡ nowe rodzaje ramek rÃ³Å¼nego rodzaju, doÅ‚Ä…czajÄ…c je do pliku
 konfiguracyjnego o otwartym formacie.
 
 %prep
