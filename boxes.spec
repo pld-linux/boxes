@@ -36,7 +36,7 @@ konfiguracyjnego o otwartym formacie.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 rm -f doc/boxes.1
