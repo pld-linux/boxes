@@ -2,7 +2,7 @@ Summary:	Draw any kind of box around some given text
 Summary(pl.UTF-8):	Rysowanie dowolnych ramek wokół podanego tekstu
 Name:		boxes
 Version:	1.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Text
 Source0:	http://boxes.thomasjensen.com/download/%{name}-%{version}.src.tar.gz
